@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>mobile test</title>
+<style>body{margin:0;background:#222;display:flex;gap:20px;padding:20px}iframe{border:0;background:#fff}</style>
+</head>
+<body>
+<iframe id="f1" src="/#home" width="390" height="844"></iframe>
+<iframe id="f2" src="/#parts" width="390" height="844"></iframe>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const report = [];
+    for (const id of ['f1','f2']) {
+      const w = document.getElementById(id).contentWindow;
+      const d = w.document;
+      report.push({
+        id,
+        innerWidth: w.innerWidth,
+        clientWidth: d.documentElement.clientWidth,
+        scrollWidth: d.documentElement.scrollWidth,
+        bodyScrollWidth: d.body.scrollWidth,
+        dir: d.documentElement.dir,
+        slide: d.querySelector('.slide.is-active')?.id,
+        slideRect: (() => { const r = d.querySelector('.slide.is-active')?.getBoundingClientRect(); return r && {x:r.x,w:r.width,h:r.height}; })(),
+        innerRect: (() => { const r = d.querySelector('.slide.is-active .slide-inner')?.getBoundingClientRect(); return r && {x:r.x,w:r.width}; })(),
+        heroTitle: (() => { const el = d.querySelector('.slide.is-active h1'); if(!el) return null; const r = el.getBoundingClientRect(); const cs = getComputedStyle(el); return {x:r.x,w:r.width,fs:cs.fontSize,ff:cs.fontFamily}; })(),
+        mobileBar: (() => { const el = d.querySelector('.mobile-bar'); if(!el) return null; const r=el.getBoundingClientRect(); return {x:r.x,w:r.width,display:getComputedStyle(el).display, dir: getComputedStyle(el).direction}; })(),
+        brand: (() => { const el = d.querySelector('.mobile-brand'); if(!el) return null; const r=el.getBoundingClientRect(); return {x:r.x,w:r.width,display:getComputedStyle(el).display}; })(),
+        sidebar: (() => { const el = d.querySelector('.sidebar'); const r=el.getBoundingClientRect(); return {x:r.x,w:r.width}; })()
+      });
+    }
+    document.title = 'READY';
+    window.__report = report;
+  }, 1200);
+});
+</script>
+</body>
+</html>

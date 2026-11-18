@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="عالم النباتات — دليل تعليمي تفاعلي عن أنواع النباتات وأجزائها واحتياجاتها والعناية بها. An interactive guide to the world of plants.">
+  <meta name="theme-color" content="#28352a">
+  <title>نبات | عالم النباتات — دليل تفاعلي</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2328352a'/%3E%3Cpath d='M15 44c1-17 12-27 34-28-1 19-12 30-29 30' fill='none' stroke='%23dce6cc' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M18 46c8-11 16-17 26-21' fill='none' stroke='%23dce6cc' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-slide="home">
+  <a class="skip-link" href="#mainContent">
+    <span class="t-ar" lang="ar">تجاوز إلى المحتوى</span>
+    <span class="t-en" lang="en">Skip to content</span>
+  </a>
+
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6C9.5 14.5 12 13 13 12"/></symbol>
+      <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12C12 8.1 8.9 5 5 5c0 3.9 3.1 7 7 7Z"/><path d="M12 12c0-2.8 2.2-5 5-5 0 2.8-2.2 5-5 5Z"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+      <symbol id="i-water" viewBox="0 0 24 24"><path d="M12 2.7S5.2 10 5.2 14.6a6.8 6.8 0 0 0 13.6 0C18.8 10 12 2.7 12 2.7Z"/><path d="M9 15.5c.3 1.3 1.3 2.2 2.6 2.4"/></symbol>
+      <symbol id="i-air" viewBox="0 0 24 24"><path d="M3 8h10a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h6"/></symbol>
+      <symbol id="i-soil" viewBox="0 0 24 24"><path d="M2.5 18h19"/><path d="M4.5 18c0-3.4 3.2-5.4 7.5-5.4s7.5 2 7.5 5.4"/><path d="M8 9.5v-2M12 8V5.5M16 9.5v-2"/></symbol>
+      <symbol id="i-flower" viewBox="0 0 24 24"><circle cx="12" cy="4.8" r="2.8"/><circle cx="18.3" cy="8.5" r="2.8"/><circle cx="18.3" cy="15.5" r="2.8"/><circle cx="12" cy="19.2" r="2.8"/><circle cx="5.7" cy="15.5" r="2.8"/><circle cx="5.7" cy="8.5" r="2.8"/><circle cx="12" cy="12" r="2.6"/></symbol>
+      <symbol id="i-root" viewBox="0 0 24 24"><path d="M12 3v8"/><path d="m12 11-5 5-3 1"/><path d="m12 11 5 5 3 1"/><path d="m7 16-1 5"/><path d="m17 16 1 5"/><path d="M12 11v10"/></symbol>
+      <symbol id="i-stem" viewBox="0 0 24 24"><path d="M12 21V5"/><path d="M12 13C9 13 5.8 10.8 5.8 7c4 0 6.2 2.2 6.2 6Z"/><path d="M12 9c3 0 6.2-2.2 6.2-6-4 0-6.2 2.2-6.2 6Z"/></symbol>
+      <symbol id="i-fruit" viewBox="0 0 24 24"><path d="M12 7.2C10 5.2 6 6.2 6 11c0 5 3 9 6 9s6-4 6-9c0-4.8-4-5.8-6-3.8Z"/><path d="M12 7.2c0-2 1-3.2 3-4.2"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.7-7.5 1.1-1.1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21M12 3c-2.5 2.6-3.8 5.7-3.8 9s1.3 6.4 3.8 9"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 7.5 7 10 4-2.5 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></symbol>
+      <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.7 5.4 3.6 8.3 9 9-5.4.7-8.3 3.6-9 9-.7-5.4-3.6-8.3-9-9 5.4-.7 8.3-3.6 9-9Z"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-thermometer" viewBox="0 0 24 24"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0Z"/><path d="M12 9v6"/></symbol>
+      <symbol id="i-cursor" viewBox="0 0 24 24"><path d="m5 3 14 8-6 2-2 6-6-16Z"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="التنقل الرئيسي">
+    <div class="sidebar__top">
+      <a class="brand" href="#home" data-slide-link="home" aria-label="نبات — الصفحة الرئيسية">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M10 34C11 20.5 19.5 12 36 11c-.8 15.5-9.5 24-22.5 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M12 36c6-8.6 12.5-13.8 21-17.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M22 27c-.4-3.8.7-7 3.5-9.7M26.5 22c2.8-.3 5.5.4 8 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".65"/>
+          </svg>
+        </span>
+        <span class="brand__word">
+          <span class="brand__name">
+            <span class="t-ar" lang="ar">نبات</span>
+            <span class="t-en" lang="en">NABAT</span>
+          </span>
+          <span class="brand__sub">
+            <span class="t-ar" lang="ar">عالم النباتات</span>
+            <span class="t-en" lang="en">The World of Plants</span>
+          </span>
+        </span>
+      </a>
+      <button class="icon-btn sidebar__close" type="button" data-nav-close aria-label="إغلاق القائمة">
+        <svg class="icon"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+
+    <div class="sidebar__rule" aria-hidden="true"></div>
+
+    <nav class="chapter-nav" aria-label="فصول العرض التقديمي">
+      <a class="nav-item is-active" href="#home" data-slide-link="home" aria-current="page" data-label-ar="البداية — الصفحة 1" data-label-en="Home — page 1">
+        <span class="nav-item__index">01</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">البداية</span><span class="t-en" lang="en">Home</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#introduction" data-slide-link="introduction" data-label-ar="مقدمة عن النباتات — الصفحة 2" data-label-en="Introduction to plants — page 2">
+        <span class="nav-item__index">02</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">مقدمة عن النباتات</span><span class="t-en" lang="en">Introduction</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#types" data-slide-link="types" data-label-ar="أنواع النباتات — الصفحة 3" data-label-en="Types of plants — page 3">
+        <span class="nav-item__index">03</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">أنواع النباتات</span><span class="t-en" lang="en">Plant Types</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#parts" data-slide-link="parts" data-label-ar="أجزاء النبات — الصفحة 4" data-label-en="Parts of a plant — page 4">
+        <span class="nav-item__index">04</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">أجزاء النبات</span><span class="t-en" lang="en">Plant Parts</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#needs" data-slide-link="needs" data-label-ar="احتياجات النباتات — الصفحة 5" data-label-en="Plant needs — page 5">
+        <span class="nav-item__index">05</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">احتياجات النباتات</span><span class="t-en" lang="en">Plant Needs</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#care" data-slide-link="care" data-label-ar="العناية بالنباتات — الصفحة 6" data-label-en="Plant care — page 6">
+        <span class="nav-item__index">06</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">العناية بالنباتات</span><span class="t-en" lang="en">Plant Care</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#importance" data-slide-link="importance" data-label-ar="أهمية النباتات — الصفحة 7" data-label-en="Importance of plants — page 7">
+        <span class="nav-item__index">07</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">أهمية النباتات</span><span class="t-en" lang="en">Importance</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+      <a class="nav-item" href="#conclusion" data-slide-link="conclusion" data-label-ar="الخاتمة — الصفحة 8" data-label-en="Conclusion — page 8">
+        <span class="nav-item__index">08</span>
+        <span class="nav-item__name"><span class="t-ar" lang="ar">الخاتمة</span><span class="t-en" lang="en">Conclusion</span></span>
+        <span class="nav-item__dot" aria-hidden="true"></span>
+      </a>
+    </nav>
+
+    <div class="sidebar__bottom">
+      <div class="sidebar-progress">
+        <div class="sidebar-progress__top">
+          <span class="t-ar" lang="ar">تقدّم الرحلة</span>
+          <span class="t-en" lang="en">Journey progress</span>
+          <span class="sidebar-progress__count" id="sidebarProgressCount">01 / 08</span>
+        </div>
+        <div class="progress-track" aria-hidden="true"><span class="progress-track__fill" id="sidebarProgressBar"></span></div>
+      </div>
+      <button class="lang-switch" type="button" data-lang-toggle aria-label="Switch to English">
+        <svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg>
+        <span class="lang-switch__text"><span class="t-ar" lang="ar">English</span><span class="t-en" lang="en">العربية</span></span>
+        <span class="lang-switch__key" aria-hidden="true"><span class="t-ar" lang="ar">EN</span><span class="t-en" lang="en">ع</span></span>
+      </button>
+      <p class="sidebar__hint">
+        <span class="t-ar" lang="ar">استخدم أسهم لوحة المفاتيح للتنقل</span>
+        <span class="t-en" lang="en">Use the arrow keys to navigate</span>
+      </p>
+    </div>
+
+    <svg class="sidebar__botanical" viewBox="0 0 300 320" fill="none" aria-hidden="true">
+      <path d="M150 320c-4-85 28-143 89-192M150 320c2-62-25-111-72-146" stroke="currentColor" stroke-width="1"/>
+      <path d="M239 128c-31 2-51-13-57-42 30-1 51 14 57 42ZM218 183c-25-8-37-25-34-51 24 9 36 26 34 51ZM171 253c-24-11-33-30-26-55 23 12 32 31 26 55ZM79 174c25-8 37-25 34-51-24 9-36 26-34 51ZM120 250c22-12 30-31 23-55-22 13-30 32-23 55Z" stroke="currentColor" stroke-width="1"/>
+    </svg>
+  </aside>
+
+  <div class="nav-backdrop" data-nav-close aria-hidden="true"></div>
+
+  <header class="mobile-bar">
+    <a class="mobile-brand" href="#home" data-slide-link="home" aria-label="نبات — الصفحة الرئيسية">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M10 34C11 20.5 19.5 12 36 11c-.8 15.5-9.5 24-22.5 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 36c6-8.6 12.5-13.8 21-17.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="mobile-brand__name">
+        <span class="t-ar" lang="ar">نبات</span>
+        <span class="t-en" lang="en">NABAT</span>
+      </span>
+    </a>
+    <div class="mobile-bar__actions">
+      <button class="mobile-lang" type="button" data-lang-toggle aria-label="Switch to English">
+        <span class="t-ar" lang="ar">EN</span>
+        <span class="t-en" lang="en">ع</span>
+      </button>
+      <button class="menu-btn" type="button" data-nav-open aria-expanded="false" aria-controls="sidebar" aria-label="فتح القائمة">
+        <svg class="icon"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="site-main">
+    <div class="top-progress" aria-hidden="true"><span id="topProgressBar"></span></div>
+    <main id="mainContent" tabindex="-1">
+      <p class="sr-only" id="slideAnnouncer" aria-live="polite"></p>
+
+      <section class="slide slide--home is-active" id="home" data-index="0" aria-labelledby="homeTitle">
+        <div class="slide__ornament slide__ornament--one" aria-hidden="true"></div>
+        <div class="slide__ornament slide__ornament--two" aria-hidden="true"></div>
+        <div class="slide-inner">
+          <div class="home-grid">
+            <div class="hero-copy">
+              <p class="eyebrow reveal" style="--delay:.05s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">دليل نباتي تفاعلي · ثمانية فصول</span>
+                <span class="t-en" lang="en">An interactive botanical field guide · 8 chapters</span>
+              </p>
+              <h1 class="hero-title reveal" id="homeTitle" style="--delay:.12s">
+                <span class="t-ar" lang="ar">اكتشف جمال<br><em>عالم النباتات</em></span>
+                <span class="t-en" lang="en">Discover the quiet beauty of<br><em>the plant world</em></span>
+              </h1>
+              <p class="hero-lead reveal" style="--delay:.2s">
+                <span class="t-ar" lang="ar">رحلة بصرية هادئة بين الأوراق والجذور والزهور. تعلّم كيف تنمو النباتات، وما تحتاجه لتعيش، وكيف نعتني بها — بلغة بسيطة وتصميم يشبه الطبيعة.</span>
+                <span class="t-en" lang="en">A slow visual journey through leaves, roots, and flowers. Learn how plants grow, what they need to thrive, and how to care for them — in a language as gentle as nature itself.</span>
+              </p>
+              <div class="hero-actions reveal" style="--delay:.28s">
+                <button class="btn btn--primary" type="button" data-next>
+                  <span class="t-ar" lang="ar">ابدأ الرحلة</span>
+                  <span class="t-en" lang="en">Begin the journey</span>
+                  <svg class="icon arrow-icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+                </button>
+                <button class="btn btn--ghost" type="button" data-goto="types">
+                  <svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg>
+                  <span class="t-ar" lang="ar">استكشف الأنواع</span>
+                  <span class="t-en" lang="en">Explore plant types</span>
+                </button>
+              </div>
+              <div class="hero-stats reveal" style="--delay:.36s">
+                <div class="hero-stat">
+                  <strong>08</strong>
+                  <span class="t-ar" lang="ar">فصول تعليمية</span>
+                  <span class="t-en" lang="en">learning chapters</span>
+                </div>
+                <div class="hero-stat">
+                  <strong>02</strong>
+                  <span class="t-ar" lang="ar">لغتان</span>
+                  <span class="t-en" lang="en">languages</span>
+                </div>
+                <div class="hero-stat">
+                  <strong>05</strong>
+                  <span class="t-ar" lang="ar">أجزاء رئيسية</span>
+                  <span class="t-en" lang="en">essential parts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal" style="--delay:.2s">
+              <div class="hero-visual__ring" aria-hidden="true"></div>
+              <div class="hero-arch">
+                <img src="assets/img/hero-leaves.jpg" alt="أوراق نبات استوائية خضراء" data-alt-ar="أوراق نبات استوائية خضراء" data-alt-en="Lush tropical green leaves" fetchpriority="high">
+                <div class="hero-arch__shade" aria-hidden="true"></div>
+                <div class="hero-quote">
+                  <svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg>
+                  <p>
+                    <span class="t-ar" lang="ar">كل ورقة تحكي قصة،<br>وكل جذر يبدأ حكاية.</span>
+                    <span class="t-en" lang="en">Every leaf tells a story.<br>Every root begins one.</span>
+                  </p>
+                </div>
+              </div>
+              <div class="hero-floating-stat">
+                <span class="hero-floating-stat__icon"><svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg></span>
+                <span>
+                  <strong>390K+</strong>
+                  <small><span class="t-ar" lang="ar">نوع نباتي معروف</span><span class="t-en" lang="en">known plant species</span></small>
+                </span>
+              </div>
+              <div class="hero-mini-image">
+                <img src="assets/img/blossom.jpg" alt="أزهار بيضاء متفتحة" data-alt-ar="أزهار بيضاء متفتحة" data-alt-en="Delicate white blossoms" loading="lazy">
+              </div>
+              <span class="hero-vertical" aria-hidden="true">Botanical field notes · 2026</span>
+              <svg class="hero-line-art" viewBox="0 0 260 260" fill="none" aria-hidden="true">
+                <path d="M130 255c-2-70 20-120 73-165M130 255c4-67-18-120-53-154" stroke="currentColor" stroke-width="1"/>
+                <path d="M200 99c-28 0-46-14-50-40 27 1 45 16 50 40ZM180 151c-24-7-35-23-33-46 22 9 33 25 33 46ZM63 121c23-6 34-21 32-44-21 7-32 23-32 44Z" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide slide--introduction" id="introduction" data-index="1" aria-labelledby="introTitle" hidden>
+        <div class="slide-inner">
+          <header class="page-heading">
+            <div class="page-heading__copy">
+              <p class="eyebrow reveal" style="--delay:.02s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">مقدمة عن النباتات</span>
+                <span class="t-en" lang="en">Introduction to plants</span>
+              </p>
+              <h2 class="page-title reveal" id="introTitle" style="--delay:.08s">
+                <span class="t-ar" lang="ar">النباتات: الحياة الصامتة<br><em>التي تصنع عالمنا</em></span>
+                <span class="t-en" lang="en">Plants: the quiet life<br><em>that shapes our world</em></span>
+              </h2>
+              <p class="page-lead reveal" style="--delay:.15s">
+                <span class="t-ar" lang="ar">من الطحالب الدقيقة إلى الأشجار العالية، تشكّل النباتات أساس الحياة على الأرض. إنها تصنع غذاءها بنفسها، وتعيد إلى الهواء ما نحتاجه لنتنفس.</span>
+                <span class="t-en" lang="en">From microscopic algae to towering trees, plants form the foundation of life on Earth. They make their own food and return to the air what we need to breathe.</span>
+              </p>
+            </div>
+            <span class="chapter-ghost reveal" aria-hidden="true" style="--delay:.06s">02</span>
+          </header>
+
+          <div class="intro-layout">
+            <div class="intro-copy">
+              <p class="definition reveal" style="--delay:.2s">
+                <span class="t-ar" lang="ar">النباتات كائنات حية <strong>متعددة الخلايا</strong>، توجد في الماء وعلى اليابسة، وتصنع غذاءها غالبًا عبر <strong>البناء الضوئي</strong> باستخدام ضوء الشمس. وتتميز بجدران خلوية من السليلوز، وبقدرتها على النمو والتكيّف مع بيئتها.</span>
+                <span class="t-en" lang="en">Plants are <strong>multicellular</strong> living organisms found on land and in water. Most make their own food through <strong>photosynthesis</strong>, using sunlight, water, and carbon dioxide. Their cells have cellulose walls, and they grow and adapt throughout their lives.</span>
+              </p>
+
+              <div class="characteristic-grid">
+                <article class="characteristic-card reveal" style="--delay:.26s">
+                  <span class="characteristic-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg></span>
+                  <h3>
+                    <span class="t-ar" lang="ar">البناء الضوئي</span>
+                    <span class="t-en" lang="en">Photosynthesis</span>
+                  </h3>
+                  <p>
+                    <span class="t-ar" lang="ar">تحوّل ضوء الشمس والماء وثاني أكسيد الكربون إلى غذاء وأكسجين.</span>
+                    <span class="t-en" lang="en">Turns sunlight, water, and CO₂ into food and oxygen.</span>
+                  </p>
+                </article>
+                <article class="characteristic-card reveal" style="--delay:.32s">
+                  <span class="characteristic-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-stem"></use></svg></span>
+                  <h3>
+                    <span class="t-ar" lang="ar">جدار خلوي</span>
+                    <span class="t-en" lang="en">Cell walls</span>
+                  </h3>
+                  <p>
+                    <span class="t-ar" lang="ar">يمنح الخلايا النباتية دعامة وشكلًا مميزًا.</span>
+                    <span class="t-en" lang="en">Give plant cells structure and support.</span>
+                  </p>
+                </article>
+                <article class="characteristic-card reveal" style="--delay:.38s">
+                  <span class="characteristic-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg></span>
+                  <h3>
+                    <span class="t-ar" lang="ar">النمو والتكيّف</span>
+                    <span class="t-en" lang="en">Growth &amp; adaptation</span>
+                  </h3>
+                  <p>
+                    <span class="t-ar" lang="ar">تنمو طوال حياتها وتتأقلم مع الضوء والحرارة والتربة.</span>
+                    <span class="t-en" lang="en">Plants keep growing and adjust to light, temperature, and soil.</span>
+                  </p>
+                </article>
+                <article class="characteristic-card reveal" style="--delay:.44s">
+                  <span class="characteristic-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-flower"></use></svg></span>
+                  <h3>
+                    <span class="t-ar" lang="ar">التكاثر</span>
+                    <span class="t-en" lang="en">Reproduction</span>
+                  </h3>
+                  <p>
+                    <span class="t-ar" lang="ar">تتكاثر بالبذور أو الأبواغ أو الأجزاء الخضرية.</span>
+                    <span class="t-en" lang="en">Through seeds, spores, or vegetative parts.</span>
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <figure class="intro-figure reveal" style="--delay:.24s">
+              <div class="intro-figure__frame">
+                <img src="assets/img/greenhouse.jpg" alt="بيت محمي مليء بالنباتات" data-alt-ar="بيت محمي مليء بالنباتات" data-alt-en="A glasshouse filled with plants" loading="lazy">
+              </div>
+              <figcaption>
+                <span class="t-ar" lang="ar">بيوت محمية، حيث تُدرس النباتات وتُحمى.</span>
+                <span class="t-en" lang="en">Glasshouses: places where plants are studied and protected.</span>
+              </figcaption>
+              <blockquote class="image-quote">
+                <svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg>
+                <p>
+                  <span class="t-ar" lang="ar">النباتات لا تنتج الغذاء فحسب؛ إنها تصنع الهواء الذي نتنفسه.</span>
+                  <span class="t-en" lang="en">Plants do more than make food; they make the air we breathe.</span>
+                </p>
+              </blockquote>
+            </figure>
+          </div>
+
+          <aside class="fact-banner reveal" style="--delay:.48s">
+            <span class="fact-banner__icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"></use></svg></span>
+            <p>
+              <strong><span class="t-ar" lang="ar">هل تعلم؟</span><span class="t-en" lang="en">Did you know?</span></strong>
+              <span class="t-ar" lang="ar">بعض النباتات، مثل فينوس صائد الذباب، تصطاد الحشرات لتحصل على النيتروجين.</span>
+              <span class="t-en" lang="en">Some plants, like the Venus flytrap, capture insects to obtain nitrogen.</span>
+            </p>
+            <span class="fact-banner__mark" aria-hidden="true">+390K</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="slide slide--types" id="types" data-index="2" aria-labelledby="typesTitle" hidden>
+        <div class="slide-inner">
+          <header class="page-heading">
+            <div class="page-heading__copy">
+              <p class="eyebrow reveal" style="--delay:.02s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">أنواع النباتات</span>
+                <span class="t-en" lang="en">Types of plants</span>
+              </p>
+              <h2 class="page-title reveal" id="typesTitle" style="--delay:.08s">
+                <span class="t-ar" lang="ar">لكل بيئة<br><em>نباتها</em></span>
+                <span class="t-en" lang="en">Every environment<br><em>has its own green</em></span>
+              </h2>
+              <p class="page-lead reveal" style="--delay:.15s">
+                <span class="t-ar" lang="ar">تختلف النباتات في الشكل والحجم والاحتياجات، لكنها تشترك جميعها في رحلة البحث عن الضوء والماء. تعرّف على أربع عائلات نباتية من حولنا.</span>
+                <span class="t-en" lang="en">Plants differ in shape, size, and needs — yet all are on the same search for light and water. Meet four plant families from around us.</span>
+              </p>
+            </div>
+            <span class="chapter-ghost reveal" aria-hidden="true" style="--delay:.06s">03</span>
+          </header>
+
+          <div class="type-grid">
+            <article class="type-card reveal" style="--delay:.18s">
+              <button class="type-card__trigger" type="button" aria-expanded="false" data-label-ar="اعرض تفاصيل النباتات الداخلية" data-label-en="Show indoor plants details">
+                <span class="type-card__inner">
+                  <span class="type-card__face type-card__front">
+                    <img src="assets/img/indoor.jpg" alt="نباتات داخلية في غرفة مشمسة" data-alt-ar="نباتات داخلية في غرفة مشمسة" data-alt-en="Indoor plants in a sunlit room" loading="lazy">
+                    <span class="type-card__overlay" aria-hidden="true"></span>
+                    <span class="type-card__topline"><span>01</span><span>INDOOR</span></span>
+                    <span class="type-card__front-copy">
+                      <span class="type-card__label"><span class="t-ar" lang="ar">داخل المنزل</span><span class="t-en" lang="en">Inside the home</span></span>
+                      <span class="type-card__name"><span class="t-ar" lang="ar">نباتات داخلية</span><span class="t-en" lang="en">Indoor plants</span></span>
+                      <span class="type-card__hint"><svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg><span class="t-ar" lang="ar">اضغط للاستكشاف</span><span class="t-en" lang="en">Tap to explore</span></span>
+                    </span>
+                  </span>
+                  <span class="type-card__face type-card__back">
+                    <span class="type-card__back-kicker"><span>01</span><span class="t-ar" lang="ar">بطاقة النوع</span><span class="t-en" lang="en">Plant card</span></span>
+                    <span class="type-card__back-title"><span class="t-ar" lang="ar">نباتات داخلية</span><span class="t-en" lang="en">Indoor plants</span></span>
+                    <span class="type-card__back-copy">
+                      <span class="t-ar" lang="ar">رفقة هادئة للمنازل والمكاتب، تحوّل الزوايا الصغيرة إلى مساحات خضراء تحتاج ضوءًا غير مباشر وريًا معتدلًا.</span>
+                      <span class="t-en" lang="en">Quiet companions for homes and offices, turning small corners into green retreats. They prefer bright indirect light and moderate watering.</span>
+                    </span>
+                    <span class="type-card__tags" aria-hidden="true"><span>Monstera</span><span>Snake plant</span><span>Ficus</span></span>
+                    <span class="type-card__back-hint"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">اضغط للعودة</span><span class="t-en" lang="en">Tap to close</span></span>
+                  </span>
+                </span>
+              </button>
+            </article>
+
+            <article class="type-card reveal" style="--delay:.26s">
+              <button class="type-card__trigger" type="button" aria-expanded="false" data-label-ar="اعرض تفاصيل النباتات الخارجية" data-label-en="Show outdoor plants details">
+                <span class="type-card__inner">
+                  <span class="type-card__face type-card__front">
+                    <img src="assets/img/outdoor-planting.jpg" alt="يدان تزرعان نبتة في الهواء الطلق" data-alt-ar="يدان تزرعان نبتة في الهواء الطلق" data-alt-en="Hands planting a seedling outdoors" loading="lazy">
+                    <span class="type-card__overlay" aria-hidden="true"></span>
+                    <span class="type-card__topline"><span>02</span><span>OUTDOOR</span></span>
+                    <span class="type-card__front-copy">
+                      <span class="type-card__label"><span class="t-ar" lang="ar">في الحديقة</span><span class="t-en" lang="en">In the garden</span></span>
+                      <span class="type-card__name"><span class="t-ar" lang="ar">نباتات خارجية</span><span class="t-en" lang="en">Outdoor plants</span></span>
+                      <span class="type-card__hint"><svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg><span class="t-ar" lang="ar">اضغط للاستكشاف</span><span class="t-en" lang="en">Tap to explore</span></span>
+                    </span>
+                  </span>
+                  <span class="type-card__face type-card__back">
+                    <span class="type-card__back-kicker"><span>02</span><span class="t-ar" lang="ar">بطاقة النوع</span><span class="t-en" lang="en">Plant card</span></span>
+                    <span class="type-card__back-title"><span class="t-ar" lang="ar">نباتات خارجية</span><span class="t-en" lang="en">Outdoor plants</span></span>
+                    <span class="type-card__back-copy">
+                      <span class="t-ar" lang="ar">تنمو في الحدائق والأفنية وتتحمل تقلبات الطقس. تحتاج شمسًا كافية وتربة جيدة التصريف وتقليمًا موسميًا.</span>
+                      <span class="t-en" lang="en">Garden and balcony growers that stand up to changing weather. They need plenty of sun, well-draining soil, and seasonal pruning.</span>
+                    </span>
+                    <span class="type-card__tags" aria-hidden="true"><span>Rose</span><span>Jasmine</span><span>Rosemary</span></span>
+                    <span class="type-card__back-hint"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">اضغط للعودة</span><span class="t-en" lang="en">Tap to close</span></span>
+                  </span>
+                </span>
+              </button>
+            </article>
+
+            <article class="type-card reveal" style="--delay:.34s">
+              <button class="type-card__trigger" type="button" aria-expanded="false" data-label-ar="اعرض تفاصيل النباتات المزهرة" data-label-en="Show flowering plants details">
+                <span class="type-card__inner">
+                  <span class="type-card__face type-card__front">
+                    <img src="assets/img/flowering.jpg" alt="زهور وردية داكنة بين الأوراق" data-alt-ar="زهور وردية داكنة بين الأوراق" data-alt-en="Deep pink flowers among leaves" loading="lazy">
+                    <span class="type-card__overlay" aria-hidden="true"></span>
+                    <span class="type-card__topline"><span>03</span><span>FLOWERING</span></span>
+                    <span class="type-card__front-copy">
+                      <span class="type-card__label"><span class="t-ar" lang="ar">ألوان وعطور</span><span class="t-en" lang="en">Colour &amp; scent</span></span>
+                      <span class="type-card__name"><span class="t-ar" lang="ar">نباتات مزهرة</span><span class="t-en" lang="en">Flowering plants</span></span>
+                      <span class="type-card__hint"><svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg><span class="t-ar" lang="ar">اضغط للاستكشاف</span><span class="t-en" lang="en">Tap to explore</span></span>
+                    </span>
+                  </span>
+                  <span class="type-card__face type-card__back">
+                    <span class="type-card__back-kicker"><span>03</span><span class="t-ar" lang="ar">بطاقة النوع</span><span class="t-en" lang="en">Plant card</span></span>
+                    <span class="type-card__back-title"><span class="t-ar" lang="ar">نباتات مزهرة</span><span class="t-en" lang="en">Flowering plants</span></span>
+                    <span class="type-card__back-copy">
+                      <span class="t-ar" lang="ar">ألوان وعطور تستدعي الملقحات وتبهج المكان. تحتاج ضوءًا قويًا وتغذية منتظمة لإطالة موسم الإزهار.</span>
+                      <span class="t-en" lang="en">Colour and scent that invite pollinators and lift the spirit. Strong light and regular feeding help extend the bloom season.</span>
+                    </span>
+                    <span class="type-card__tags" aria-hidden="true"><span>Tulip</span><span>Chrysanthemum</span><span>Peony</span></span>
+                    <span class="type-card__back-hint"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">اضغط للعودة</span><span class="t-en" lang="en">Tap to close</span></span>
+                  </span>
+                </span>
+              </button>
+            </article>
+
+            <article class="type-card reveal" style="--delay:.42s">
+              <button class="type-card__trigger" type="button" aria-expanded="false" data-label-ar="اعرض تفاصيل النباتات الصحراوية" data-label-en="Show desert plants details">
+                <span class="type-card__inner">
+                  <span class="type-card__face type-card__front">
+                    <img src="assets/img/desert-cacti.jpg" alt="صبار متعدد في بيئة صحراوية" data-alt-ar="صبار متعدد في بيئة صحراوية" data-alt-en="A cluster of cacti in a dry landscape" loading="lazy">
+                    <span class="type-card__overlay" aria-hidden="true"></span>
+                    <span class="type-card__topline"><span>04</span><span>DESERT</span></span>
+                    <span class="type-card__front-copy">
+                      <span class="type-card__label"><span class="t-ar" lang="ar">حياة الجفاف</span><span class="t-en" lang="en">Life in the dry</span></span>
+                      <span class="type-card__name"><span class="t-ar" lang="ar">نباتات صحراوية</span><span class="t-en" lang="en">Desert plants</span></span>
+                      <span class="type-card__hint"><svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg><span class="t-ar" lang="ar">اضغط للاستكشاف</span><span class="t-en" lang="en">Tap to explore</span></span>
+                    </span>
+                  </span>
+                  <span class="type-card__face type-card__back">
+                    <span class="type-card__back-kicker"><span>04</span><span class="t-ar" lang="ar">بطاقة النوع</span><span class="t-en" lang="en">Plant card</span></span>
+                    <span class="type-card__back-title"><span class="t-ar" lang="ar">نباتات صحراوية</span><span class="t-en" lang="en">Desert plants</span></span>
+                    <span class="type-card__back-copy">
+                      <span class="t-ar" lang="ar">فرادة العيش في قلب الجفاف، حيث تُحفظ كل قطرة ماء بعناية. تحتاج شمسًا مباشرة وريًا قليلًا وتربة سريعة التصريف.</span>
+                      <span class="t-en" lang="en">Masters of survival in dry places, where every drop of water is treasured. They need direct sun, infrequent watering, and fast-draining soil.</span>
+                    </span>
+                    <span class="type-card__tags" aria-hidden="true"><span>Cactus</span><span>Aloe vera</span><span>Agave</span></span>
+                    <span class="type-card__back-hint"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">اضغط للعودة</span><span class="t-en" lang="en">Tap to close</span></span>
+                  </span>
+                </span>
+              </button>
+            </article>
+          </div>
+
+          <p class="interaction-hint reveal" style="--delay:.5s">
+            <svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg>
+            <span class="t-ar" lang="ar">اضغط على أي بطاقة لكشف احتياجاتها وأمثلتها.</span>
+            <span class="t-en" lang="en">Tap any card to reveal its needs and examples.</span>
+          </p>
+        </div>
+      </section>
+      <section class="slide slide--parts" id="parts" data-index="3" aria-labelledby="partsTitle" hidden>
+        <div class="slide-inner">
+          <header class="page-heading">
+            <div class="page-heading__copy">
+              <p class="eyebrow reveal" style="--delay:.02s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">أجزاء النبات</span>
+                <span class="t-en" lang="en">Parts of a plant</span>
+              </p>
+              <h2 class="page-title reveal" id="partsTitle" style="--delay:.08s">
+                <span class="t-ar" lang="ar">من الجذر<br><em>إلى الزهرة</em></span>
+                <span class="t-en" lang="en">From root<br><em>to bloom</em></span>
+              </h2>
+              <p class="page-lead reveal" style="--delay:.15s">
+                <span class="t-ar" lang="ar">خمسة أجزاء تتكامل في نظام واحد: الجذور تُثبّت، والساق تنقل، والأوراق تصنع الغذاء، والزهرة تكمل الحكاية، والثمرة تحفظ البداية.</span>
+                <span class="t-en" lang="en">Five parts, one living system: roots anchor, the stem transports, leaves make food, flowers continue the story, and fruits protect its beginning.</span>
+              </p>
+            </div>
+            <span class="chapter-ghost reveal" aria-hidden="true" style="--delay:.06s">04</span>
+          </header>
+
+          <div class="parts-layout">
+            <div class="parts-art reveal" style="--delay:.18s">
+              <div class="art-frame" id="partsArt">
+                <span class="art-frame__label" aria-hidden="true">PLANTA · ANATOMY</span>
+                <div class="art-photo">
+                  <img src="assets/img/leaf-macro.jpg" alt="تفاصيل قريبة لورقة نبات" data-alt-ar="تفاصيل قريبة لورقة نبات" data-alt-en="A close-up detail of a plant leaf" loading="lazy">
+                </div>
+                <svg class="botanical-svg" viewBox="0 0 600 720" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="302" cy="335" r="238" fill="#f8f5ea" opacity=".72"/>
+                  <circle cx="302" cy="335" r="268" stroke="#7f8e6c" stroke-width="1" stroke-dasharray="2 11" opacity=".45"/>
+                  <path d="M40 558c72-15 139-5 201 2 80 9 137-9 207-11 41-1 77 3 112 12v159H40V558Z" fill="#e5dec9" opacity=".8"/>
+                  <path d="M40 568c77-10 129-3 198 3 75 6 138-9 208-10 42-1 76 3 114 11" stroke="#b3ac93" stroke-width="1.2" stroke-dasharray="3 7"/>
+
+                  <g class="plant-part" data-part="roots">
+                    <path d="M305 560c2 50-7 92-27 154" stroke="#687451" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M302 590c-32 17-55 45-72 94M297 625c-32 25-44 53-50 83M311 607c31 20 52 43 63 89M309 655c17 21 17 40 14 57M290 667c-18 20-22 35-26 45" stroke="#687451" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M282 584c-19 6-36 18-49 34M315 620c20 8 39 20 53 38M279 648c-15 5-27 14-36 26M316 679c11 10 20 21 25 31" stroke="#84916f" stroke-width="1.6" stroke-linecap="round"/>
+                    <circle cx="230" cy="684" r="3" fill="#687451"/>
+                    <circle cx="247" cy="708" r="2.5" fill="#687451"/>
+                    <circle cx="374" cy="696" r="3" fill="#687451"/>
+                    <circle cx="264" cy="712" r="2.5" fill="#687451"/>
+                    <circle cx="323" cy="712" r="2" fill="#687451"/>
+                  </g>
+
+                  <g class="plant-part" data-part="stem">
+                    <path d="M305 565c-19-80 15-143 4-210-9-64 18-134 36-207" stroke="#4f5d41" stroke-width="5" stroke-linecap="round"/>
+                    <path d="M311 446c33-13 61-23 91-37" stroke="#4f5d41" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="309" cy="355" r="4.5" fill="#4f5d41"/>
+                    <circle cx="321" cy="230" r="4" fill="#4f5d41"/>
+                  </g>
+
+                  <g class="plant-part" data-part="leaf">
+                    <path d="M311 409c45-43 104-56 166-76-27 56-88 86-166 76Z" fill="#93a37e" stroke="#4f5d41" stroke-width="2"/>
+                    <path d="M318 405c56-19 100-38 143-58M358 390l7-31M393 374l9-29M425 355l9-24" stroke="#687451" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+                    <path d="M308 465c-45-43-102-54-163-77 25 58 87 90 163 77Z" fill="#a3b28e" stroke="#4f5d41" stroke-width="2"/>
+                    <path d="M302 459c-52-22-94-44-138-66M266 438l-10-31M231 420l-11-27M198 401l-10-23" stroke="#687451" stroke-width="1.2" stroke-linecap="round" opacity=".8"/>
+                    <path d="M313 331c-41-35-91-41-135-67 32 52 77 75 135 67Z" fill="#aab895" stroke="#4f5d41" stroke-width="2"/>
+                    <path d="M307 326c-42-18-78-35-110-55M276 309l-8-24M245 292l-9-20" stroke="#687451" stroke-width="1.1" stroke-linecap="round" opacity=".75"/>
+                    <path d="M321 277c38-36 85-48 127-69-23 55-66 81-127 69Z" fill="#8e9f79" stroke="#4f5d41" stroke-width="2"/>
+                    <path d="M327 271c39-17 72-33 101-51M360 256l7-25M392 241l8-22" stroke="#687451" stroke-width="1.1" stroke-linecap="round" opacity=".75"/>
+                    <path d="M306 535c-42-23-86-23-122-42 30 42 73 58 122 42Z" fill="#9cab85" stroke="#4f5d41" stroke-width="2"/>
+                    <path d="M301 529c-37-13-68-25-95-38M263 514l-8-21" stroke="#687451" stroke-width="1.1" stroke-linecap="round" opacity=".75"/>
+                  </g>
+
+                  <g class="plant-part" data-part="fruit">
+                    <path d="M311 437c38 5 75 0 110-14" stroke="#4f5d41" stroke-width="2.4" stroke-linecap="round"/>
+                    <circle cx="438" cy="411" r="25" fill="#b9785a" stroke="#7d4e39" stroke-width="1.8"/>
+                    <circle cx="467" cy="431" r="19" fill="#c88b6e" stroke="#7d4e39" stroke-width="1.8"/>
+                    <circle cx="443" cy="445" r="16" fill="#a9674d" stroke="#7d4e39" stroke-width="1.8"/>
+                    <circle cx="431" cy="403" r="7" fill="#d9a28a" opacity=".7"/>
+                    <circle cx="460" cy="425" r="5" fill="#e2b49c" opacity=".65"/>
+                    <path d="M445 389c2-9 9-14 19-15-2 9-8 14-19 15Z" fill="#84916f" stroke="#4f5d41" stroke-width="1.2"/>
+                  </g>
+
+                  <g class="plant-part" data-part="flower">
+                    <g fill="#f2e1da" stroke="#a47c72" stroke-width="1.7">
+                      <ellipse cx="350" cy="99" rx="19" ry="39"/>
+                      <ellipse cx="350" cy="99" rx="19" ry="39" transform="rotate(60 350 138)"/>
+                      <ellipse cx="350" cy="99" rx="19" ry="39" transform="rotate(120 350 138)"/>
+                      <ellipse cx="350" cy="99" rx="19" ry="39" transform="rotate(180 350 138)"/>
+                      <ellipse cx="350" cy="99" rx="19" ry="39" transform="rotate(240 350 138)"/>
+                      <ellipse cx="350" cy="99" rx="19" ry="39" transform="rotate(300 350 138)"/>
+                    </g>
+                    <g fill="#f7ecde" stroke="#b68a78" stroke-width="1.2" opacity=".9">
+                      <ellipse cx="350" cy="113" rx="11" ry="25" transform="rotate(30 350 138)"/>
+                      <ellipse cx="350" cy="113" rx="11" ry="25" transform="rotate(90 350 138)"/>
+                      <ellipse cx="350" cy="113" rx="11" ry="25" transform="rotate(150 350 138)"/>
+                      <ellipse cx="350" cy="113" rx="11" ry="25" transform="rotate(210 350 138)"/>
+                      <ellipse cx="350" cy="113" rx="11" ry="25" transform="rotate(270 350 138)"/>
+                      <ellipse cx="350" cy="113" rx="11" ry="25" transform="rotate(330 350 138)"/>
+                    </g>
+                    <circle cx="350" cy="138" r="20" fill="#d7b283" stroke="#8f6b48" stroke-width="1.6"/>
+                    <circle cx="350" cy="138" r="8" fill="#8f6b48"/>
+                    <circle cx="344" cy="130" r="2" fill="#f5e5c8" opacity=".9"/>
+                  </g>
+
+                  <g opacity=".65" stroke="#a0ab8c" stroke-width="1">
+                    <path d="M120 178c8 4 12 10 14 19M472 255c8-3 16-3 24 1M155 455c7 3 11 8 13 16M478 500c7-1 13 1 18 5"/>
+                  </g>
+                  <circle cx="465" cy="182" r="4" fill="#b9785a" opacity=".65"/>
+                  <circle cx="142" cy="326" r="3" fill="#7f8e6c" opacity=".7"/>
+                </svg>
+
+                <button class="hotspot" type="button" data-part-target="flower" style="--x:58%;--y:19%" aria-label="الزهرة — Flower" data-label-ar="اعرض تفاصيل الزهرة" data-label-en="Show flower details">
+                  <span>01</span><span class="hotspot__label"><span class="t-ar" lang="ar">الزهرة</span><span class="t-en" lang="en">Flower</span></span>
+                </button>
+                <button class="hotspot" type="button" data-part-target="leaf" style="--x:36%;--y:57%" aria-label="الأوراق — Leaves" data-label-ar="اعرض تفاصيل الأوراق" data-label-en="Show leaf details">
+                  <span>02</span><span class="hotspot__label"><span class="t-ar" lang="ar">الأوراق</span><span class="t-en" lang="en">Leaves</span></span>
+                </button>
+                <button class="hotspot" type="button" data-part-target="stem" style="--x:52%;--y:48%" aria-label="الساق — Stem" data-label-ar="اعرض تفاصيل الساق" data-label-en="Show stem details">
+                  <span>03</span><span class="hotspot__label"><span class="t-ar" lang="ar">الساق</span><span class="t-en" lang="en">Stem</span></span>
+                </button>
+                <button class="hotspot" type="button" data-part-target="fruit" style="--x:76%;--y:56%" aria-label="الثمار — Fruit" data-label-ar="اعرض تفاصيل الثمار" data-label-en="Show fruit details">
+                  <span>04</span><span class="hotspot__label"><span class="t-ar" lang="ar">الثمار</span><span class="t-en" lang="en">Fruit</span></span>
+                </button>
+                <button class="hotspot" type="button" data-part-target="roots" style="--x:50%;--y:88%" aria-label="الجذور — Roots" data-label-ar="اعرض تفاصيل الجذور" data-label-en="Show root details">
+                  <span>05</span><span class="hotspot__label"><span class="t-ar" lang="ar">الجذور</span><span class="t-en" lang="en">Roots</span></span>
+                </button>
+              </div>
+              <p class="parts-art__note">
+                <svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg>
+                <span class="t-ar" lang="ar">اضغط على أي نقطة مرقمة في الرسم.</span>
+                <span class="t-en" lang="en">Tap any numbered point on the illustration.</span>
+              </p>
+            </div>
+
+            <div class="parts-panel reveal" style="--delay:.28s">
+              <div class="part-tabs" role="tablist" aria-label="أجزاء النبات">
+                <button class="part-tab is-active" type="button" id="tab-roots" role="tab" aria-selected="true" aria-controls="partDetail" data-part-target="roots" data-label-ar="الجذور" data-label-en="Roots">
+                  <span class="part-tab__index">01</span>
+                  <span class="part-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-root"></use></svg></span>
+                  <span class="part-tab__name"><span class="t-ar" lang="ar">الجذور</span><span class="t-en" lang="en">Roots</span></span>
+                  <svg class="icon part-tab__chevron" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+                </button>
+                <button class="part-tab" type="button" id="tab-stem" role="tab" aria-selected="false" aria-controls="partDetail" data-part-target="stem" data-label-ar="الساق" data-label-en="Stem">
+                  <span class="part-tab__index">02</span>
+                  <span class="part-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-stem"></use></svg></span>
+                  <span class="part-tab__name"><span class="t-ar" lang="ar">الساق</span><span class="t-en" lang="en">Stem</span></span>
+                  <svg class="icon part-tab__chevron" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+                </button>
+                <button class="part-tab" type="button" id="tab-leaf" role="tab" aria-selected="false" aria-controls="partDetail" data-part-target="leaf" data-label-ar="الأوراق" data-label-en="Leaves">
+                  <span class="part-tab__index">03</span>
+                  <span class="part-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg></span>
+                  <span class="part-tab__name"><span class="t-ar" lang="ar">الأوراق</span><span class="t-en" lang="en">Leaves</span></span>
+                  <svg class="icon part-tab__chevron" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+                </button>
+                <button class="part-tab" type="button" id="tab-flower" role="tab" aria-selected="false" aria-controls="partDetail" data-part-target="flower" data-label-ar="الأزهار" data-label-en="Flowers">
+                  <span class="part-tab__index">04</span>
+                  <span class="part-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-flower"></use></svg></span>
+                  <span class="part-tab__name"><span class="t-ar" lang="ar">الأزهار</span><span class="t-en" lang="en">Flowers</span></span>
+                  <svg class="icon part-tab__chevron" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+                </button>
+                <button class="part-tab" type="button" id="tab-fruit" role="tab" aria-selected="false" aria-controls="partDetail" data-part-target="fruit" data-label-ar="الثمار" data-label-en="Fruit">
+                  <span class="part-tab__index">05</span>
+                  <span class="part-tab__icon"><svg class="icon" aria-hidden="true"><use href="#i-fruit"></use></svg></span>
+                  <span class="part-tab__name"><span class="t-ar" lang="ar">الثمار</span><span class="t-en" lang="en">Fruit</span></span>
+                  <svg class="icon part-tab__chevron" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+                </button>
+              </div>
+              <div class="part-detail" id="partDetail" role="tabpanel" aria-labelledby="tab-roots" tabindex="0">
+                <noscript><p>JavaScript is required to view plant part details.</p></noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide slide--needs" id="needs" data-index="4" aria-labelledby="needsTitle" hidden>
+        <div class="slide-inner">
+          <header class="page-heading">
+            <div class="page-heading__copy">
+              <p class="eyebrow reveal" style="--delay:.02s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">احتياجات النباتات</span>
+                <span class="t-en" lang="en">Plant needs</span>
+              </p>
+              <h2 class="page-title reveal" id="needsTitle" style="--delay:.08s">
+                <span class="t-ar" lang="ar">ماذا تحتاج النبتة<br><em>لتنمو؟</em></span>
+                <span class="t-en" lang="en">What does a plant need<br><em>to thrive?</em></span>
+              </h2>
+              <p class="page-lead reveal" style="--delay:.15s">
+                <span class="t-ar" lang="ar">ليست العناية وصفة واحدة للجميع، لكن أربعة عناصر أساسية تصنع الفرق بين نبتة باقية ونبتة مزدهرة.</span>
+                <span class="t-en" lang="en">Care is not one recipe for every plant, but four essentials make the difference between surviving and flourishing.</span>
+              </p>
+            </div>
+            <span class="chapter-ghost reveal" aria-hidden="true" style="--delay:.06s">05</span>
+          </header>
+
+          <div class="needs-layout">
+            <div class="needs-visual reveal" style="--delay:.2s">
+              <div class="needs-visual__frame">
+                <img src="assets/img/monstera.jpg" alt="نبتة مونستيرا كبيرة في أصيص" data-alt-ar="نبتة مونستيرا كبيرة في أصيص" data-alt-en="A large monstera plant in a terracotta pot" loading="lazy">
+              </div>
+              <blockquote class="needs-quote">
+                <span class="needs-quote__mark" aria-hidden="true">“</span>
+                <p>
+                  <span class="t-ar" lang="ar">أفضل النباتات ليست تلك التي تُسقى أكثر، بل تلك التي تُفهم أكثر.</span>
+                  <span class="t-en" lang="en">The best-kept plants are not watered most; they are understood best.</span>
+                </p>
+              </blockquote>
+              <div class="golden-rule">
+                <span class="golden-rule__icon"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg></span>
+                <span>
+                  <small><span class="t-ar" lang="ar">القاعدة الذهبية</span><span class="t-en" lang="en">The golden rule</span></small>
+                  <strong><span class="t-ar" lang="ar">اعتدال · ملاحظة · صبر</span><span class="t-en" lang="en">Balance · Observe · Wait</span></strong>
+                </span>
+              </div>
+            </div>
+
+            <div class="needs-grid">
+              <button class="need-card reveal" type="button" aria-expanded="false" style="--delay:.22s" data-label-ar="اعرض نصيحة عن الماء" data-label-en="Show a watering tip">
+                <span class="need-card__top">
+                  <span class="need-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-water"></use></svg></span>
+                  <span class="need-card__index">01</span>
+                </span>
+                <span class="need-card__name"><span class="t-ar" lang="ar">الماء</span><span class="t-en" lang="en">Water</span></span>
+                <span class="need-card__tag"><span class="t-ar" lang="ar">شريان النقل</span><span class="t-en" lang="en">The carrier</span></span>
+                <span class="need-card__copy">
+                  <span class="t-ar" lang="ar">ينقل الماء والمعادن من الجذور إلى بقية الأجزاء، ويحافظ على انتفاخ الخلايا.</span>
+                  <span class="t-en" lang="en">Carries water and minerals from the roots and keeps cells firm and healthy.</span>
+                </span>
+                <span class="need-card__hint"><span class="t-ar" lang="ar">نصيحة عملية</span><span class="t-en" lang="en">Practical tip</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></span>
+                <span class="need-card__tip">
+                  <span class="need-card__tip-label"><svg class="icon" aria-hidden="true"><use href="#i-water"></use></svg><span class="t-ar" lang="ar">نصيحة الماء</span><span class="t-en" lang="en">Water tip</span></span>
+                  <span class="need-card__tip-copy">
+                    <span class="t-ar" lang="ar">تحقق من رطوبة التربة بإصبعك قبل الري. الري العميق أفضل من الرش المتكرر.</span>
+                    <span class="t-en" lang="en">Check soil moisture with your finger before watering. Deep watering beats frequent sprinkling.</span>
+                  </span>
+                  <span class="need-card__close"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">إغلاق</span><span class="t-en" lang="en">Close</span></span>
+                </span>
+              </button>
+
+              <button class="need-card reveal" type="button" aria-expanded="false" style="--delay:.28s" data-label-ar="اعرض نصيحة عن الضوء" data-label-en="Show a light tip">
+                <span class="need-card__top">
+                  <span class="need-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg></span>
+                  <span class="need-card__index">02</span>
+                </span>
+                <span class="need-card__name"><span class="t-ar" lang="ar">الضوء</span><span class="t-en" lang="en">Light</span></span>
+                <span class="need-card__tag"><span class="t-ar" lang="ar">مصدر الطاقة</span><span class="t-en" lang="en">The energy</span></span>
+                <span class="need-card__copy">
+                  <span class="t-ar" lang="ar">يستخدمه النبات في البناء الضوئي، وتختلف حاجته بين شمس مباشرة وضوء غير مباشر.</span>
+                  <span class="t-en" lang="en">Powers photosynthesis. Needs range from direct sun to soft indirect light.</span>
+                </span>
+                <span class="need-card__hint"><span class="t-ar" lang="ar">نصيحة عملية</span><span class="t-en" lang="en">Practical tip</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></span>
+                <span class="need-card__tip">
+                  <span class="need-card__tip-label"><svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg><span class="t-ar" lang="ar">نصيحة الضوء</span><span class="t-en" lang="en">Light tip</span></span>
+                  <span class="need-card__tip-copy">
+                    <span class="t-ar" lang="ar">أدر الأصيص ربع دورة كل أسبوع حتى ينمو النبات بتوازن نحو الضوء.</span>
+                    <span class="t-en" lang="en">Rotate the pot a quarter turn each week so the plant grows evenly toward the light.</span>
+                  </span>
+                  <span class="need-card__close"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">إغلاق</span><span class="t-en" lang="en">Close</span></span>
+                </span>
+              </button>
+
+              <button class="need-card reveal" type="button" aria-expanded="false" style="--delay:.34s" data-label-ar="اعرض نصيحة عن الهواء" data-label-en="Show an air tip">
+                <span class="need-card__top">
+                  <span class="need-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-air"></use></svg></span>
+                  <span class="need-card__index">03</span>
+                </span>
+                <span class="need-card__name"><span class="t-ar" lang="ar">الهواء</span><span class="t-en" lang="en">Air</span></span>
+                <span class="need-card__tag"><span class="t-ar" lang="ar">تنفّس صامت</span><span class="t-en" lang="en">The quiet breath</span></span>
+                <span class="need-card__copy">
+                  <span class="t-ar" lang="ar">يحتاج النبات ثاني أكسيد الكربون للبناء الضوئي والأكسجين للتنفس، ويحتاج حركة هواء لطيفة.</span>
+                  <span class="t-en" lang="en">Plants need CO₂ for photosynthesis and oxygen for respiration, plus gentle air movement.</span>
+                </span>
+                <span class="need-card__hint"><span class="t-ar" lang="ar">نصيحة عملية</span><span class="t-en" lang="en">Practical tip</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></span>
+                <span class="need-card__tip">
+                  <span class="need-card__tip-label"><svg class="icon" aria-hidden="true"><use href="#i-air"></use></svg><span class="t-ar" lang="ar">نصيحة الهواء</span><span class="t-en" lang="en">Air tip</span></span>
+                  <span class="need-card__tip-copy">
+                    <span class="t-ar" lang="ar">لا تحشر النباتات في زاوية مغلقة؛ الهواء الراكد يشجّع العفن ويضعف الأوراق.</span>
+                    <span class="t-en" lang="en">Don’t crowd plants into a closed corner. Still air encourages mould and weak leaves.</span>
+                  </span>
+                  <span class="need-card__close"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">إغلاق</span><span class="t-en" lang="en">Close</span></span>
+                </span>
+              </button>
+
+              <button class="need-card reveal" type="button" aria-expanded="false" style="--delay:.4s" data-label-ar="اعرض نصيحة عن التربة" data-label-en="Show a soil tip">
+                <span class="need-card__top">
+                  <span class="need-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-soil"></use></svg></span>
+                  <span class="need-card__index">04</span>
+                </span>
+                <span class="need-card__name"><span class="t-ar" lang="ar">التربة</span><span class="t-en" lang="en">Soil</span></span>
+                <span class="need-card__tag"><span class="t-ar" lang="ar">بيت الجذور</span><span class="t-en" lang="en">The root home</span></span>
+                <span class="need-card__copy">
+                  <span class="t-ar" lang="ar">تثبّت النبات وتمنحه الماء والمعادن، وتحتاج تصريفًا جيدًا وتهوية كافية.</span>
+                  <span class="t-en" lang="en">Anchors the plant and holds water and nutrients. It needs good drainage and airflow.</span>
+                </span>
+                <span class="need-card__hint"><span class="t-ar" lang="ar">نصيحة عملية</span><span class="t-en" lang="en">Practical tip</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg></span>
+                <span class="need-card__tip">
+                  <span class="need-card__tip-label"><svg class="icon" aria-hidden="true"><use href="#i-soil"></use></svg><span class="t-ar" lang="ar">نصيحة التربة</span><span class="t-en" lang="en">Soil tip</span></span>
+                  <span class="need-card__tip-copy">
+                    <span class="t-ar" lang="ar">اختر أصيصًا بفتحة تصريف، وخلطة تربة تناسب نوع النبات وحجم جذوره.</span>
+                    <span class="t-en" lang="en">Choose a pot with a drainage hole and a mix suited to the plant and its root size.</span>
+                  </span>
+                  <span class="need-card__close"><svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg><span class="t-ar" lang="ar">إغلاق</span><span class="t-en" lang="en">Close</span></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <p class="interaction-hint reveal" style="--delay:.46s">
+            <svg class="icon" aria-hidden="true"><use href="#i-cursor"></use></svg>
+            <span class="t-ar" lang="ar">اضغط على أي بطاقة لكشف نصيحة عملية.</span>
+            <span class="t-en" lang="en">Tap any card to reveal a practical tip.</span>
+          </p>
+        </div>
+      </section>
+      <section class="slide slide--care" id="care" data-index="5" aria-labelledby="careTitle" hidden>
+        <div class="slide-inner">
+          <header class="page-heading">
+            <div class="page-heading__copy">
+              <p class="eyebrow reveal" style="--delay:.02s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">العناية بالنباتات</span>
+                <span class="t-en" lang="en">Plant care</span>
+              </p>
+              <h2 class="page-title reveal" id="careTitle" style="--delay:.08s">
+                <span class="t-ar" lang="ar">العناية: لغة صغيرة<br><em>تُقال كل يوم</em></span>
+                <span class="t-en" lang="en">Care is a language<br><em>spoken every day</em></span>
+              </h2>
+              <p class="page-lead reveal" style="--delay:.15s">
+                <span class="t-ar" lang="ar">لا تحتاج النباتات إلى عناية مثالية، بل إلى روتين ثابت وملاحظة هادئة. ابدأ بأساسيات الري والتغذية والمراقبة، وستتعلّم النبتة أن تكافئك بالنمو.</span>
+                <span class="t-en" lang="en">Plants don’t need perfection — they need a steady rhythm and a quiet eye. Start with watering, feeding, and observation, and they will answer with growth.</span>
+              </p>
+            </div>
+            <span class="chapter-ghost reveal" aria-hidden="true" style="--delay:.06s">06</span>
+          </header>
+
+          <div class="care-layout">
+            <div class="care-visual reveal" style="--delay:.2s">
+              <figure class="care-figure">
+                <img src="assets/img/care-potting.jpg" alt="شخص يعتني بنبتة داخلية ويعيد زراعتها" data-alt-ar="شخص يعتني بنبتة داخلية ويعيد زراعتها" data-alt-en="A person caring for and repotting a houseplant" loading="lazy">
+                <figcaption>
+                  <svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg>
+                  <span class="t-ar" lang="ar">لحظات صغيرة، أثر كبير.</span>
+                  <span class="t-en" lang="en">Small moments, lasting growth.</span>
+                </figcaption>
+              </figure>
+              <div class="care-note">
+                <span class="care-note__icon"><svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg></span>
+                <p>
+                  <strong><span class="t-ar" lang="ar">راقب قبل أن تعالج.</span><span class="t-en" lang="en">Observe before you treat.</span></strong>
+                  <span class="t-ar" lang="ar">لكل نوع إيقاعه؛ اقرأ احتياجاته قبل أن تضع له جدولًا.</span>
+                  <span class="t-en" lang="en">Every plant has its own rhythm. Learn its needs before setting a schedule.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="care-checklist reveal" style="--delay:.28s">
+              <div class="care-checklist__head">
+                <div>
+                  <span class="care-checklist__kicker"><span class="t-ar" lang="ar">روتين بسيط</span><span class="t-en" lang="en">A simple ritual</span></span>
+                  <h3><span class="t-ar" lang="ar">قائمة العناية الأسبوعية</span><span class="t-en" lang="en">Weekly care list</span></h3>
+                </div>
+                <div class="progress-ring" id="careRing" style="--progress:0" aria-hidden="true">
+                  <span><strong id="careDone">0</strong><small>/ 5</small></span>
+                </div>
+              </div>
+              <p class="care-checklist__intro">
+                <span class="t-ar" lang="ar">علّم المهام المنجزة — تُحفظ تلقائيًا في متصفحك.</span>
+                <span class="t-en" lang="en">Tick what you’ve done — your progress is saved in this browser.</span>
+              </p>
+
+              <div class="care-items">
+                <label class="care-item">
+                  <input type="checkbox" data-care-item>
+                  <span class="care-item__check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                  <span class="care-item__text">
+                    <strong><span class="t-ar" lang="ar">المس التربة قبل الري</span><span class="t-en" lang="en">Feel the soil before watering</span></strong>
+                    <small><span class="t-ar" lang="ar">اسقِ عندما تجف الطبقة العلوية 2–3 سم.</span><span class="t-en" lang="en">Water when the top 2–3 cm feels dry.</span></small>
+                  </span>
+                </label>
+                <label class="care-item">
+                  <input type="checkbox" data-care-item>
+                  <span class="care-item__check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                  <span class="care-item__text">
+                    <strong><span class="t-ar" lang="ar">أدر الأصيص نحو الضوء</span><span class="t-en" lang="en">Turn the pot toward the light</span></strong>
+                    <small><span class="t-ar" lang="ar">ربع دورة كل أسبوع لنمو متوازن.</span><span class="t-en" lang="en">A quarter turn each week for even growth.</span></small>
+                  </span>
+                </label>
+                <label class="care-item">
+                  <input type="checkbox" data-care-item>
+                  <span class="care-item__check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                  <span class="care-item__text">
+                    <strong><span class="t-ar" lang="ar">امسح الغبار عن الأوراق</span><span class="t-en" lang="en">Wipe dust from the leaves</span></strong>
+                    <small><span class="t-ar" lang="ar">أوراق نظيفة تلتقط الضوء بكفاءة أكبر.</span><span class="t-en" lang="en">Clean leaves capture light more efficiently.</span></small>
+                  </span>
+                </label>
+                <label class="care-item">
+                  <input type="checkbox" data-care-item>
+                  <span class="care-item__check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                  <span class="care-item__text">
+                    <strong><span class="t-ar" lang="ar">أزل الأوراق الصفراء أو الجافة</span><span class="t-en" lang="en">Remove yellow or dry leaves</span></strong>
+                    <small><span class="t-ar" lang="ar">بلطف، ودون إجهاد الساق.</span><span class="t-en" lang="en">Gently, without straining the stem.</span></small>
+                  </span>
+                </label>
+                <label class="care-item">
+                  <input type="checkbox" data-care-item>
+                  <span class="care-item__check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></span>
+                  <span class="care-item__text">
+                    <strong><span class="t-ar" lang="ar">افحص الأوراق بحثًا عن الآفات</span><span class="t-en" lang="en">Check leaves for pests</span></strong>
+                    <small><span class="t-ar" lang="ar">افحص الوجه السفلي للأوراق قرب العقد.</span><span class="t-en" lang="en">Look under leaves and around leaf nodes.</span></small>
+                  </span>
+                </label>
+              </div>
+
+              <div class="care-checklist__foot">
+                <p class="care-complete" id="careComplete" hidden>
+                  <svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg>
+                  <span class="t-ar" lang="ar">أحسنت! نبتتك ممتنة لعنايتك.</span>
+                  <span class="t-en" lang="en">Lovely. Your plant is grateful for the care.</span>
+                </p>
+                <button class="text-btn" type="button" id="careReset">
+                  <svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg>
+                  <span class="t-ar" lang="ar">إعادة تعيين القائمة</span>
+                  <span class="t-en" lang="en">Reset the list</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="care-tips">
+            <article class="care-tip reveal" style="--delay:.34s">
+              <span class="care-tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-water"></use></svg></span>
+              <div><h3><span class="t-ar" lang="ar">الري الذكي</span><span class="t-en" lang="en">Smart watering</span></h3>
+              <p><span class="t-ar" lang="ar">عندما تجف الطبقة العلوية 2–3 سم، اسقِ حتى يخرج الماء من فتحة التصريف.</span><span class="t-en" lang="en">When the top 2–3 cm is dry, water until it drains from the pot.</span></p></div>
+            </article>
+            <article class="care-tip reveal" style="--delay:.4s">
+              <span class="care-tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg></span>
+              <div><h3><span class="t-ar" lang="ar">التسميد</span><span class="t-en" lang="en">Feeding</span></h3>
+              <p><span class="t-ar" lang="ar">مرة شهريًا في الربيع والصيف، وقلّل أو أوقف في الشتاء حسب نوع النبتة.</span><span class="t-en" lang="en">Once a month in spring and summer; reduce or pause in winter, depending on the plant.</span></p></div>
+            </article>
+            <article class="care-tip reveal" style="--delay:.46s">
+              <span class="care-tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg></span>
+              <div><h3><span class="t-ar" lang="ar">التقليم</span><span class="t-en" lang="en">Pruning</span></h3>
+              <p><span class="t-ar" lang="ar">أزل الأجزاء الميتة بلطف لتوجيه الطاقة نحو نمو جديد.</span><span class="t-en" lang="en">Gently remove dead growth to direct energy into new leaves.</span></p></div>
+            </article>
+            <article class="care-tip reveal" style="--delay:.52s">
+              <span class="care-tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-eye"></use></svg></span>
+              <div><h3><span class="t-ar" lang="ar">الملاحظة</span><span class="t-en" lang="en">Observation</span></h3>
+              <p><span class="t-ar" lang="ar">الأوراق الشاحبة أو الأطراف البنية رسائل مبكرة؛ عالج السبب لا العَرَض.</span><span class="t-en" lang="en">Pale leaves or brown edges are early messages. Treat the cause, not only the symptom.</span></p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="slide slide--importance" id="importance" data-index="6" aria-labelledby="importanceTitle" hidden>
+        <div class="slide-inner">
+          <header class="page-heading">
+            <div class="page-heading__copy">
+              <p class="eyebrow reveal" style="--delay:.02s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">أهمية النباتات</span>
+                <span class="t-en" lang="en">The importance of plants</span>
+              </p>
+              <h2 class="page-title reveal" id="importanceTitle" style="--delay:.08s">
+                <span class="t-ar" lang="ar">كل نبتة<br><em>تترك أثرًا</em></span>
+                <span class="t-en" lang="en">Every plant<br><em>leaves a mark</em></span>
+              </h2>
+              <p class="page-lead reveal" style="--delay:.15s">
+                <span class="t-ar" lang="ar">النباتات ليست مشهدًا خلفيًا لحياتنا. إنها تصنع الهواء والغذاء والظل، وتحمي التربة والمياه، وتمنح العالم توازنه.</span>
+                <span class="t-en" lang="en">Plants are not the backdrop of our lives. They make the air, food, and shade we rely on, protect soil and water, and hold the living world in balance.</span>
+              </p>
+            </div>
+            <span class="chapter-ghost reveal" aria-hidden="true" style="--delay:.06s">07</span>
+          </header>
+
+          <div class="impact-layout">
+            <div class="impact-visual reveal" style="--delay:.2s">
+              <img src="assets/img/forest.jpg" alt="مسار داخل غابة كثيفة الأشجار" data-alt-ar="مسار داخل غابة كثيفة الأشجار" data-alt-en="A path through a dense green forest" loading="lazy">
+              <span class="impact-visual__overlay" aria-hidden="true"></span>
+              <div class="impact-visual__title">
+                <span class="impact-visual__badge"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg><span class="t-ar" lang="ar">رئة الأرض</span><span class="t-en" lang="en">Earth’s lungs</span></span>
+                <p>
+                  <span class="t-ar" lang="ar">حيث تزدهر الغابات،<br>تتبعها الحياة.</span>
+                  <span class="t-en" lang="en">Where forests thrive,<br>life follows.</span>
+                </p>
+              </div>
+              <div class="impact-visual__mini">
+                <strong>30%</strong>
+                <span><span class="t-ar" lang="ar">من يابسة الأرض<br>تغطيها الغابات</span><span class="t-en" lang="en">of Earth’s land<br>is forest</span></span>
+              </div>
+            </div>
+
+            <div class="impact-content">
+              <div class="impact-stats">
+                <div class="impact-stat reveal" style="--delay:.24s">
+                  <strong><span data-count="80">80</span><sup>%</sup></strong>
+                  <span><span class="t-ar" lang="ar">من غذاء الإنسان يأتي من النباتات</span><span class="t-en" lang="en">of human food comes from plants</span></span>
+                </div>
+                <div class="impact-stat reveal" style="--delay:.3s">
+                  <strong><span data-count="30">30</span><sup>%</sup></strong>
+                  <span><span class="t-ar" lang="ar">من يابسة الأرض تغطيها الغابات</span><span class="t-en" lang="en">of Earth’s land is covered by forests</span></span>
+                </div>
+                <div class="impact-stat reveal" style="--delay:.36s">
+                  <strong><span data-count="22">22</span><sup>kg</sup></strong>
+                  <span><span class="t-ar" lang="ar">ثاني أكسيد الكربون تمتصه شجرة ناضجة سنويًا</span><span class="t-en" lang="en">of CO₂ a mature tree can absorb each year</span></span>
+                </div>
+              </div>
+
+              <div class="benefit-grid">
+                <article class="benefit-card reveal" style="--delay:.4s">
+                  <span class="benefit-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-air"></use></svg></span>
+                  <h3><span class="t-ar" lang="ar">هواء أنقى</span><span class="t-en" lang="en">Cleaner air</span></h3>
+                  <p><span class="t-ar" lang="ar">تنتج الأكسجين وترشّح بعض الملوثات من الهواء.</span><span class="t-en" lang="en">They release oxygen and filter some pollutants from the air.</span></p>
+                </article>
+                <article class="benefit-card reveal" style="--delay:.46s">
+                  <span class="benefit-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-fruit"></use></svg></span>
+                  <h3><span class="t-ar" lang="ar">غذاء ودواء</span><span class="t-en" lang="en">Food &amp; medicine</span></h3>
+                  <p><span class="t-ar" lang="ar">توفّر الحبوب والفواكه والخضروات، وهي مصدر لكثير من الأدوية.</span><span class="t-en" lang="en">They give us grains, fruits, and vegetables, and source many medicines.</span></p>
+                </article>
+                <article class="benefit-card reveal" style="--delay:.52s">
+                  <span class="benefit-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-thermometer"></use></svg></span>
+                  <h3><span class="t-ar" lang="ar">مناخ أهدأ</span><span class="t-en" lang="en">A calmer climate</span></h3>
+                  <p><span class="t-ar" lang="ar">تخزّن الكربون، وتلطّف المدن، وتحمي التربة من الانجراف.</span><span class="t-en" lang="en">They store carbon, cool cities, and protect soil from erosion.</span></p>
+                </article>
+                <article class="benefit-card reveal" style="--delay:.58s">
+                  <span class="benefit-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"></use></svg></span>
+                  <h3><span class="t-ar" lang="ar">تنوّع حيوي</span><span class="t-en" lang="en">Biodiversity</span></h3>
+                  <p><span class="t-ar" lang="ar">توفّر موائل وغذاءً ومأوى لعدد هائل من الكائنات.</span><span class="t-en" lang="en">They provide habitat, food, and shelter for countless living things.</span></p>
+                </article>
+              </div>
+              <p class="impact-note reveal" style="--delay:.64s">
+                <span class="t-ar" lang="ar">أرقام تقريبية استنادًا إلى تقديرات منظمة الأغذية والزراعة (FAO). حفظ الغابات القائمة يبقى الخطوة الأولى.</span>
+                <span class="t-en" lang="en">Approximate figures based on FAO estimates. Protecting existing forests remains the first step.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slide slide--conclusion" id="conclusion" data-index="7" aria-labelledby="conclusionTitle" hidden>
+        <div class="slide-inner">
+          <div class="finale">
+            <div class="finale__copy">
+              <p class="eyebrow eyebrow--light reveal" style="--delay:.05s">
+                <span class="eyebrow__line" aria-hidden="true"></span>
+                <span class="t-ar" lang="ar">الخاتمة</span>
+                <span class="t-en" lang="en">Conclusion</span>
+              </p>
+              <h2 class="finale__title reveal" id="conclusionTitle" style="--delay:.12s">
+                <span class="t-ar" lang="ar">اهتم بالأخضر،<br><em>يهتم بك.</em></span>
+                <span class="t-en" lang="en">Tend the green,<br><em>and it will tend you.</em></span>
+              </h2>
+              <p class="finale__lead reveal" style="--delay:.2s">
+                <span class="t-ar" lang="ar">كل نبتة نعتني بها هي قرار صغير لصالح عالم أكثر صحة. ابدأ بما تستطيع: ماء أقل هدرًا، نبتة محلية، ومساحة خضراء تبقى.</span>
+                <span class="t-en" lang="en">Every plant we care for is a small decision for a healthier world. Start with what you can: less wasted water, a native plant, a green space left intact.</span>
+              </p>
+
+              <div class="commitments">
+                <div class="commitment reveal" style="--delay:.28s">
+                  <span class="commitment__num">01</span>
+                  <span class="commitment__icon"><svg class="icon" aria-hidden="true"><use href="#i-water"></use></svg></span>
+                  <span class="commitment__text">
+                    <strong><span class="t-ar" lang="ar">اسقِ بوعي</span><span class="t-en" lang="en">Water with intention</span></strong>
+                    <small><span class="t-ar" lang="ar">بقدر الحاجة، لا بقدر العادة.</span><span class="t-en" lang="en">As much as needed, not as much as habit.</span></small>
+                  </span>
+                </div>
+                <div class="commitment reveal" style="--delay:.34s">
+                  <span class="commitment__num">02</span>
+                  <span class="commitment__icon"><svg class="icon" aria-hidden="true"><use href="#i-sprout"></use></svg></span>
+                  <span class="commitment__text">
+                    <strong><span class="t-ar" lang="ar">ازرع محليًا</span><span class="t-en" lang="en">Plant native</span></strong>
+                    <small><span class="t-ar" lang="ar">اختر نباتات تنتمي إلى بيئتك.</span><span class="t-en" lang="en">Choose plants that belong to your landscape.</span></small>
+                  </span>
+                </div>
+                <div class="commitment reveal" style="--delay:.4s">
+                  <span class="commitment__num">03</span>
+                  <span class="commitment__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+                  <span class="commitment__text">
+                    <strong><span class="t-ar" lang="ar">احمِ الموائل</span><span class="t-en" lang="en">Protect habitats</span></strong>
+                    <small><span class="t-ar" lang="ar">لا تقتطع الأخضر، بل أضف إليه.</span><span class="t-en" lang="en">Don’t just take from green spaces; add to them.</span></small>
+                  </span>
+                </div>
+              </div>
+
+              <div class="finale__actions reveal" style="--delay:.46s">
+                <button class="btn btn--light" type="button" data-goto="home">
+                  <svg class="icon" aria-hidden="true"><use href="#i-rotate"></use></svg>
+                  <span class="t-ar" lang="ar">أعد الرحلة من البداية</span>
+                  <span class="t-en" lang="en">Begin the journey again</span>
+                </button>
+              </div>
+              <blockquote class="finale__quote reveal" style="--delay:.52s">
+                <span aria-hidden="true">“</span>
+                <p>
+                  <span class="t-ar" lang="ar">الأرض لا تحتاج إلى أبطال؛ تحتاج إلى أيدٍ تعتني.</span>
+                  <span class="t-en" lang="en">The Earth doesn’t need heroes. It needs hands that care.</span>
+                </p>
+              </blockquote>
+            </div>
+
+            <div class="finale__visual reveal" style="--delay:.26s">
+              <div class="finale__image">
+                <img src="assets/img/greenhouse.jpg" alt="نباتات خضراء داخل بيت محمي" data-alt-ar="نباتات خضراء داخل بيت محمي" data-alt-en="Green plants inside a glasshouse" loading="lazy">
+                <span class="finale__image-shade" aria-hidden="true"></span>
+                <div class="finale__image-card">
+                  <svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg>
+                  <p>
+                    <span class="t-ar" lang="ar">العالم يصبح أخضر<br>حين نعتني به.</span>
+                    <span class="t-en" lang="en">The world grows greener<br>when we tend to it.</span>
+                  </p>
+                </div>
+              </div>
+              <span class="finale__seal" aria-hidden="true"><small>CHAPTER</small><strong>08</strong><small>THE END · A NEW START</small></span>
+              <svg class="finale__line-art" viewBox="0 0 240 300" fill="none" aria-hidden="true">
+                <path d="M120 300c0-80 30-141 92-192M120 300c0-57-22-105-63-144" stroke="currentColor" stroke-width="1"/>
+                <path d="M204 112c-29 1-48-13-54-40 29-1 49 14 54 40ZM98 172c22-9 33-25 30-50-22 10-32 27-30 50Z" stroke="currentColor" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+
+          <footer class="site-footer">
+            <div class="site-footer__brand">
+              <span class="site-footer__leaf"><svg class="icon" aria-hidden="true"><use href="#i-leaf"></use></svg></span>
+              <span>
+                <strong><span class="t-ar" lang="ar">نبات</span><span class="t-en" lang="en">NABAT</span></strong>
+                <small><span class="t-ar" lang="ar">دليل بصري لعالم أخضر ينبض بالحياة.</span><span class="t-en" lang="en">A visual guide to a living, breathing green world.</span></small>
+              </span>
+            </div>
+            <p>
+              <span class="t-ar" lang="ar">صُمّم بعناية لعالم أخضر · 2026</span>
+              <span class="t-en" lang="en">Crafted with care for a greener world · 2026</span>
+            </p>
+            <p class="site-footer__credit">
+              <span class="t-ar" lang="ar">الصور من Unsplash وPexels</span>
+              <span class="t-en" lang="en">Photography via Unsplash &amp; Pexels</span>
+            </p>
+          </footer>
+        </div>
+      </section>
+    </main>
+    <nav class="pager" aria-label="التنقل بين صفحات العرض">
+      <button class="pager-btn pager-btn--prev" type="button" id="prevBtn" aria-label="الصفحة السابقة">
+        <svg class="icon pager-btn__chevron" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+        <span class="pager-btn__copy">
+          <small><span class="t-ar" lang="ar">السابق</span><span class="t-en" lang="en">Previous</span></small>
+          <strong id="prevName">البداية</strong>
+        </span>
+      </button>
+      <div class="pager-center">
+        <span class="pager-count"><span id="currentPage">01</span><span class="pager-count__sep">/</span><span>08</span></span>
+        <div class="pager-dots" id="pagerDots" aria-label="الانتقال إلى صفحة"></div>
+      </div>
+      <button class="pager-btn pager-btn--next" type="button" id="nextBtn" aria-label="الصفحة التالية">
+        <span class="pager-btn__copy">
+          <small><span class="t-ar" lang="ar">التالي</span><span class="t-en" lang="en">Next</span></small>
+          <strong id="nextName">مقدمة عن النباتات</strong>
+        </span>
+        <svg class="icon pager-btn__chevron" aria-hidden="true"><use href="#i-chevron-right"></use></svg>
+      </button>
+    </nav>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
